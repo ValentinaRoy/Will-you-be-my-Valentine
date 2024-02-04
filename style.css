@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 body {
-    font-family: 'Great Vibes', cursive;
+    
     text-align: center;
     background-color: rgb(250, 226, 226);
    
@@ -27,13 +27,15 @@ body {
     background-image: url(yeah-bwoi-grin.gif);
     background-size: contain;
     background-repeat: no-repeat;
-    animation: falling 5s linear infinite;
+    animation: falling 3s linear infinite;
+    opacity: 0;
     
   }
 
 @keyframes falling {
       0% {
         transform: translateY(-10%) translateX(0) ;
+        opacity: 100%;
       }
     
       25% {
@@ -48,6 +50,7 @@ body {
       }
       100% {
         transform: translateY(110%) translateX(0) ;
+        opacity: 100%;
       }
 }
 #valentine-question {
